@@ -8,7 +8,7 @@ A lightweight Node.js proxy server that exposes **NVIDIA's** models behind two d
 
 ```
 nvidia.js      ← main proxy server
-package.json   ← package file
+package.json   ← optional package file  for integrating future features
 README.md      ← this file
 ```
 
