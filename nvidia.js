@@ -301,7 +301,7 @@ async function fetchUpstream(payload) {
 // ── Route: POST /v1/chat/completions  (OpenAI-compatible) ────
 async function handleOpenAI(req, res) {
   const body    = await readBody(req);
-  const stream  = body.stream !== false;
+  const stream = body.stream === true;
   const payload = buildUpstreamPayload(body.messages || [], {
     ...body,
     model:  body.model  || DEFAULT_MODEL,
