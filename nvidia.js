@@ -89,10 +89,7 @@ function buildUpstreamPayload(messages, opts) {
   return {
     model:                opts.model || DEFAULT_MODEL,
     messages,
-    temperature:          opts.temperature ?? 1,
-    top_p:                opts.top_p     ?? 0.95,
     max_tokens:           opts.max_tokens ?? DEFAULT_MAX_TOK,
-    reasoning_budget:     opts.reasoning_budget ?? DEFAULT_MAX_TOK,
     chat_template_kwargs: opts.chat_template_kwargs ?? { enable_thinking: true },
     stream:               opts.stream !== false, // default true
   };
