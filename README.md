@@ -86,12 +86,12 @@ curl http://localhost:3000/health
 
 ---
 
-### OpenAI — streaming (default)
+### OpenAI — streaming
 
 ```bash
 curl -N http://localhost:3000/v1/chat/completions \
   -H "Content-Type: application/json" \
-  -d '{"messages": [{"role": "user", "content": "Count 1 to 10"}]}'
+  -d '{"messages": [{"role": "user", "content": "Count 1 to 10"}], "stream": true}'
 ```
 
 ### OpenAI — non-streaming
