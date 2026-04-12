@@ -1,5 +1,5 @@
 /**
- * NVIDIA Nemotron Proxy Server
+ * NVIDIA Proxy Server
  * ─────────────────────────────────────────────────────────────
  * OpenAI-compatible : POST /v1/chat/completions
  * Anthropic-compat  : POST /v1/messages
@@ -933,7 +933,7 @@ const server = http.createServer(async (req, res) => {
 server.listen(PORT, () => {
   console.log(`
 ╔══════════════════════════════════════════════════════╗
-║          NVIDIA Nemotron Proxy  –  Running           ║
+║          NVIDIA Proxy  –  Running           ║
 ╠══════════════════════════════════════════════════════╣
 ║  OpenAI   →  POST http://localhost:${PORT}/v1/chat/completions
 ║  Anthropic→  POST http://localhost:${PORT}/v1/messages
